@@ -1,13 +1,13 @@
 
 function Stool({ bottom, left, right }) {
   return(
-    <img src="./images/stool.png" alt="stool" className={`absolute bottom-${bottom} left-${left} right-${right} h-30`}/>
+    <img src="./images/stool.png" alt="stool" className={`absolute h-30`} style={{bottom, left, right}}/>
   );
 }
 
 function Plant({ stage, bottom, left, right }) {
   return(
-    <img src={`./images/plants/${stage}.png`} alt={`${stage} plant`} className={`absolute bottom-${bottom} left-${left} right-${right} h-30`} />
+    <img src={`./images/plants/${stage}.png`} alt={`${stage} plant`} className={`absolute h-30`} style={{bottom, left, right}} />
   );
 }
 
@@ -19,15 +19,15 @@ function App() {
 
         <img src="./images/window.png" alt="window" className="absolute top-0 left-25 h-40"/>
 
-        <Stool bottom={4} left={6}/>
-        <Plant bottom={28} left={6} stage="teen" />
+        <Stool bottom={16} left={24}/>
+        <Plant bottom={112} left={24} stage="teen" />
 
-        <Stool bottom={10} left={40}/>
-        <Plant bottom={34} left={36} stage="baby" />
-        <Plant bottom={34} left={45} stage="child" />
+        <Stool bottom={40} left={160}/>
+        <Plant bottom={136} left={144} stage="baby" />
+        <Plant bottom={136} left={180} stage="child" />
 
-        <Stool bottom={6} right={6}/>
-        <Plant bottom={31} right={6} stage="adult" />
+        <Stool bottom={24} right={24}/>
+        <Plant bottom={124} right={24} stage="adult" />
 
       </div>
     </div>
