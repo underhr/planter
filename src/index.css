@@ -3,3 +3,7 @@
 body {
     display: flex;
 }
+
+.cursor {
+    cursor: url('/planter/images/leaf.png') 0 0, auto;
+}
